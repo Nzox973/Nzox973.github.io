@@ -1,374 +1,348 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enzo ATTICOT — Développeur & Cybersécurité</title>
-  <meta name="description" content="Portfolio d'Enzo ATTICOT — développement Python, cybersécurité défensive, projets GitHub. Futur étudiant en Bachelor Management &amp; Numérique au Pôle Sup de Guyane." />
-  <meta name="author" content="Enzo ATTICOT" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Enzo ATTICOT — Développeur & Cybersécurité" />
-  <meta property="og:description" content="Développement Python, cybersécurité défensive, projets GitHub. Futur étudiant en Bachelor Management &amp; Numérique au Pôle Sup de Guyane." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://Nzox973.github.io/" />
-  <!-- Favicon inline SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#081312">
+  <title>Enzo ATTICOT — Python, API & cybersécurité défensive</title>
+  <meta name="description" content="Portfolio d’Enzo ATTICOT : projets Python et FastAPI, cybersécurité défensive, parcours et liens professionnels.">
+  <meta name="author" content="Enzo ATTICOT">
+  <meta name="robots" content="index,follow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="canonical" href="https://nzox973.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <noscript>
+    <style>
+      @media (max-width: 680px) {
+        .menu-button { display: none; }
+        .navigation { position: static; display: flex; padding: 0; border: 0; flex-direction: row; }
+        .navigation a { border: 0; }
+      }
+    </style>
+  </noscript>
+
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Enzo ATTICOT — Portfolio">
+  <meta property="og:description" content="Projets Python, API backend et cybersécurité défensive depuis la Guyane.">
+  <meta property="og:url" content="https://nzox973.github.io/">
+  <meta property="og:image" content="https://nzox973.github.io/assets/img/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Enzo ATTICOT — Python, API et cybersécurité défensive">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Enzo ATTICOT — Portfolio">
+  <meta name="twitter:description" content="Projets Python, API backend et cybersécurité défensive depuis la Guyane.">
+  <meta name="twitter:image" content="https://nzox973.github.io/assets/img/social-card.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Enzo ATTICOT",
+    "alternateName": ["Nzox973", "NzoxYt"],
+    "url": "https://nzox973.github.io/",
+    "homeLocation": {
+      "@type": "AdministrativeArea",
+      "name": "Guyane française"
+    },
+    "sameAs": [
+      "https://github.com/Nzox973",
+      "https://www.linkedin.com/in/enzo-atticot/",
+      "https://learn.microsoft.com/en-us/users/enzoatticot-7921/",
+      "https://www.youtube.com/@NzoxYt",
+      "https://www.twitch.tv/nzoxyt"
+    ],
+    "knowsAbout": [
+      "Python",
+      "FastAPI",
+      "API REST",
+      "Cybersécurité défensive",
+      "Git"
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">EA<span class="dot">.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#parcours">Parcours</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle">☰</button>
-  </nav>
+  <header class="site-header" data-header>
+    <a class="brand" href="#accueil" aria-label="Accueil — Enzo ATTICOT">
+      <span class="brand-mark" aria-hidden="true">EA</span>
+      <span class="brand-label">Enzo ATTICOT</span>
+    </a>
 
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="hero-badge">Bac 2026 ✓ — Bachelor MN · Pôle Sup Guyane sept. 2026</div>
-      <h1 class="hero-title">Enzo <span class="accent">ATTICOT</span></h1>
-      <p class="hero-sub">Développeur · Cybersécurité défensive</p>
-      <p class="hero-desc">
-        Bac 2026 (Maths-NSI) — passionné par la cybersécurité défensive, le développement
-        Python et les réseaux. Futur étudiant en Bachelor Management &amp; Numérique au Pôle Sup de Guyane (sept. 2026).
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn-secondary">Me contacter</a>
-      </div>
-      <div class="hero-links">
-        <a href="https://github.com/Nzox973" target="_blank" class="social-link">
-          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="terminal">
-        <div class="terminal-header">
-          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-          <span class="terminal-title">nzox@portfolio ~ $</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="cmd">$</span> whoami</p>
-          <p class="out">enzo_atticot</p>
-          <p><span class="cmd">$</span> cat skills.txt</p>
-          <p class="out">Python · JavaScript · HTML/CSS</p>
-          <p class="out">Cybersécurité · Réseaux · Git</p>
-          <p><span class="cmd">$</span> cat status.txt</p>
-          <p class="out accent">Bac 2026 ✓ → Bachelor MN — Pôle Sup sept. 2026</p>
-          <p><span class="cmd">$</span> cat mission.txt</p>
-          <p class="out">Construire, sécuriser, apprendre.</p>
-          <p><span class="cmd blink">$</span> <span class="cursor">_</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation" data-menu-button>
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span class="sr-only">Ouvrir le menu</span>
+    </button>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">À propos</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Je suis Enzo ATTICOT, titulaire du Bac 2026 (spécialités
-            <strong>Mathématiques</strong> et <strong>NSI</strong>).
-            Je construis activement mon avenir dans l'informatique depuis le lycée : projets Python,
-            exploration de la cybersécurité défensive, bases solides en réseaux et développement web.
+    <nav class="navigation" id="navigation" aria-label="Navigation principale" data-navigation>
+      <a href="#profil">Profil</a>
+      <a href="#projets">Projets</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#liens">Liens</a>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>Guyane française</span><span aria-hidden="true">/</span><span>Portfolio 2026</span></p>
+          <h1 id="hero-title">Je construis des outils <em>utiles</em>, lisibles et défensifs.</h1>
+          <p class="hero-intro">
+            Je suis <strong>Enzo ATTICOT</strong>, bachelier 2026 en Mathématiques et NSI.
+            Je développe principalement en Python et je m’intéresse aux API,
+            aux réseaux et à la cybersécurité défensive.
           </p>
-          <p>
-            Rigueur, discipline et esprit d'équipe guident mon parcours, aussi bien dans mes
-            projets techniques que dans mes activités sportives (karaté, ceinture noire).
-          </p>
-          <p>
-            Je rejoins à la rentrée 2026 le <strong>Bachelor Management &amp; Numérique</strong> au Pôle Sup de Guyane,
-            avec une spécialisation progressive vers le <strong>développement logiciel et la cybersécurité</strong>.
-          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projets">Explorer mes projets</a>
+            <a class="button button-quiet" href="https://github.com/Nzox973" target="_blank" rel="noreferrer">Voir GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="about-cards">
-          <div class="card-mini">
-            <span class="card-icon">🎓</span>
+
+        <aside class="status-board" aria-label="Repères actuels">
+          <div class="board-heading">
+            <span class="signal" aria-hidden="true"></span>
+            <span>Situation actuelle</span>
+          </div>
+          <dl>
             <div>
-              <strong>Bac 2026 — Maths & NSI</strong>
-              <p>Bachelor MN · Pôle Sup Guyane (sept. 2026)</p>
+              <dt>Diplôme</dt>
+              <dd>Bac général 2026</dd>
             </div>
-          </div>
-          <div class="card-mini">
-            <span class="card-icon">🔐</span>
             <div>
-              <strong>Cybersécurité défensive</strong>
-              <p>Audit · Réseaux · Python</p>
+              <dt>Spécialités</dt>
+              <dd>Mathématiques · NSI</dd>
             </div>
-          </div>
-          <div class="card-mini">
-            <span class="card-icon">🎖️</span>
             <div>
-              <strong>Engagement citoyen</strong>
-              <p>Rigueur, discipline, esprit d'équipe</p>
+              <dt>Prochaine étape</dt>
+              <dd>Bachelor Management & Numérique</dd>
             </div>
-          </div>
-          <div class="card-mini">
-            <span class="card-icon">🚀</span>
             <div>
-              <strong>Objectif 2026</strong>
-              <p>Bachelor MN → Cyber / Dev</p>
+              <dt>Rentrée prévue</dt>
+              <dd>Septembre 2026</dd>
             </div>
-          </div>
-        </div>
+          </dl>
+          <p class="board-note">Les projets publics et les preuves associées sont accessibles ci-dessous.</p>
+        </aside>
       </div>
-    </div>
-  </section>
+      <div class="hero-index" aria-hidden="true">01</div>
+    </section>
 
-  <!-- SKILLS -->
-  <section class="section dark" id="skills">
-    <div class="container">
-      <h2 class="section-title">Compétences</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Développement</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
-            <div class="skill-item"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
-            <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width:45%"></div></div></div>
-            <div class="skill-item"><span>SQL</span><div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Cybersécurité</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span>Audit Windows</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
-            <div class="skill-item"><span>Réseaux / TCP-IP</span><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
-            <div class="skill-item"><span>Cryptographie</span><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
-            <div class="skill-item"><span>Sécurité défensive</span><div class="skill-bar"><div class="skill-fill" style="width:50%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Outils & Environnement</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span>Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
-            <div class="skill-item"><span>VS Code</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
-            <div class="skill-item"><span>Linux (bases)</span><div class="skill-bar"><div class="skill-fill" style="width:40%"></div></div></div>
-            <div class="skill-item"><span>PowerShell</span><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
-          </div>
-        </div>
-        <div class="skill-category">
-          <h3>Notions NSI</h3>
-          <div class="skill-list">
-            <div class="skill-item"><span>Algorithmique</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
-            <div class="skill-item"><span>Récursivité / POO</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
-            <div class="skill-item"><span>Structures de données</span><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div></div>
-            <div class="skill-item"><span>Architecture réseau</span><div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projets</h2>
-      <div class="projects-grid">
-
-        <div class="project-card featured">
-          <div class="project-tag">Cybersécurité · Python</div>
-          <h3>Nzox Security Audit Tool</h3>
-          <p>Outil d'audit Windows en Python : analyse processus lourds, ports ouverts, programmes au démarrage, état de Windows Defender, espace disque. Génère un rapport HTML clair. 100% défensif.</p>
-          <div class="project-stack">
-            <span>Python</span><span>psutil</span><span>Windows API</span><span>HTML Report</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Nzox973/nzox-security-audit" target="_blank" class="btn-project">GitHub →</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">Python · Discord · IA</div>
-          <h3>NzoxYt Discord Bot</h3>
-          <p>Bot Discord complet en Python : IA intégrée (Claude/Anthropic), annonces automatiques YouTube & Twitch, système XP et niveaux, rôles par réaction, modération anti-spam. Architecture en cogs modulaires.</p>
-          <div class="project-stack">
-            <span>Python</span><span>discord.py</span><span>Anthropic API</span><span>aiosqlite</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Nzox973/nzox-discord-bot" target="_blank" class="btn-project">GitHub →</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-tag">Python · FastAPI · REST</div>
-          <h3>Nzox API</h3>
-          <p>API REST complète avec FastAPI : authentification JWT, hachage bcrypt, ORM SQLAlchemy, validation Pydantic v2, CRUD utilisateurs et ressources, documentation Swagger automatique.</p>
-          <div class="project-stack">
-            <span>FastAPI</span><span>SQLAlchemy</span><span>JWT</span><span>Pydantic v2</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Nzox973/nzox-api" target="_blank" class="btn-project">GitHub →</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PARCOURS -->
-  <section class="section dark" id="parcours">
-    <div class="container">
-      <h2 class="section-title">Parcours</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2026 →</div>
-            <h3>Bachelor Management &amp; Numérique</h3>
-            <p>Pôle Sup de Guyane — Externat Saint-Joseph de Cluny, Cayenne · Orientation numérique, développement, transformation digitale</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot active"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2024 – 2026</div>
-            <h3>Terminale — Spécialités Maths & NSI</h3>
-            <p>Lycée — Guyane · Algorithmique, structures de données, réseaux, bases de données, cryptographie · Bac 2026</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2025 –</div>
-            <h3>Engagement citoyen</h3>
-            <p>Rigueur, discipline, esprit d'équipe, résistance au stress</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-date">2023 – 2024</div>
-            <h3>Première — Spécialités Maths & NSI</h3>
-            <p>Introduction à la programmation, Python, algorithmique, web</p>
-          </div>
-        </div>
-
+    <section class="section profile-section" id="profil" aria-labelledby="profil-title">
+      <div class="section-heading">
+        <p class="section-number">02 — Profil</p>
+        <h2 id="profil-title">Des compétences reliées à des réalisations.</h2>
       </div>
 
-      <div class="certif-section">
-        <h3>Certifications & Objectifs</h3>
-        <div class="certif-grid">
-          <div class="certif-item planned">
-            <span class="certif-status">Prévu 2026</span>
-            <strong>CompTIA Security+</strong>
-            <p>Base cybersécurité internationale</p>
-          </div>
-          <div class="certif-item planned">
-            <span class="certif-status">Prévu 2026</span>
-            <strong>Python Institute PCEP</strong>
-            <p>Certification Python fondamentaux</p>
-          </div>
-          <div class="certif-item planned">
-            <span class="certif-status">En cours</span>
-            <strong>TryHackMe / PicoCTF</strong>
-            <p>Pratique cybersécurité défensive</p>
-          </div>
-          <div class="certif-item planned">
-            <span class="certif-status">Prévu 2027</span>
-            <strong>Cisco CCNA</strong>
-            <p>Réseaux et infrastructure</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- OBJECTIFS -->
-  <section class="section dark" id="objectifs">
-    <div class="container">
-      <h2 class="section-title">Objectifs 2026–2031</h2>
-      <div class="roadmap-grid">
-        <div class="roadmap-item">
-          <div class="roadmap-year">2026</div>
-          <h3>Bac + Bachelor MN</h3>
-          <p>Obtenir le baccalauréat · Intégrer le Bachelor Management &amp; Numérique · Lancer 2 projets GitHub solides</p>
-        </div>
-        <div class="roadmap-item">
-          <div class="roadmap-year">2027</div>
-          <h3>Stage & Montée en compétences</h3>
-          <p>Premier stage en développement ou cybersécurité · Python solide · Linux maîtrisé</p>
-        </div>
-        <div class="roadmap-item">
-          <div class="roadmap-year">2028</div>
-          <h3>Spécialisation</h3>
-          <p>Master / Ingénierie · Projets cyber avancés · Certifications (OSCP visé)</p>
-        </div>
-        <div class="roadmap-item">
-          <div class="roadmap-year">2031</div>
-          <h3>Bac+5</h3>
-          <p>Expert cybersécurité ou développeur senior · Objectif : être meilleur que le diplôme</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <p>Je suis disponible pour des opportunités de stage, de collaboration sur des projets, ou simplement pour échanger sur l'informatique et la cybersécurité.</p>
-          <div class="contact-links">
-            <a href="mailto:enzoatticot5@gmail.com" class="contact-item">
-              <span>✉</span> enzoatticot5@gmail.com
-            </a>
-            <a href="https://github.com/Nzox973" target="_blank" class="contact-item">
-              <span>⌨</span> GitHub — Nzox973
-            </a>
-            <a href="https://www.linkedin.com/in/enzo-atticot/" target="_blank" class="contact-item">
-              <span>in</span> LinkedIn — Enzo ATTICOT
-            </a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-status">
-            <div class="status-dot"></div>
-            <span>Disponible — Bac 2026 · Bachelor MN sept. 2026</span>
-          </div>
-          <p>Ouvert à :</p>
-          <ul>
-            <li>Stage informatique / cybersécurité</li>
-            <li>Collaboration sur projets GitHub</li>
-            <li>Networking tech/cyber</li>
+      <div class="evidence-grid">
+        <article class="evidence-card">
+          <p class="card-kicker">Développement</p>
+          <h3>Python & backend</h3>
+          <p>Scripts, bots et API REST conçus pour transformer un besoin concret en outil documenté.</p>
+          <ul class="tag-list" aria-label="Technologies de développement">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>SQLAlchemy</li>
+            <li>JavaScript</li>
           </ul>
-          <a href="https://github.com/Nzox973" target="_blank" class="btn-primary">Voir mon GitHub →</a>
-        </div>
-      </div>
-    </div>
-  </section>
+        </article>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 Enzo ATTICOT — Construit avec HTML/CSS/JS</p>
-      <div class="footer-links">
-        <a href="https://github.com/Nzox973" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/enzo-atticot/" target="_blank">LinkedIn</a>
+        <article class="evidence-card">
+          <p class="card-kicker">Sécurité</p>
+          <h3>Approche défensive</h3>
+          <p>Observation d’un système, hygiène numérique et restitution claire, dans un cadre légal et autorisé.</p>
+          <ul class="tag-list" aria-label="Compétences de sécurité">
+            <li>Audit Windows</li>
+            <li>TCP/IP</li>
+            <li>PowerShell</li>
+            <li>Rapports HTML</li>
+          </ul>
+        </article>
+
+        <article class="evidence-card">
+          <p class="card-kicker">Méthode</p>
+          <h3>Apprendre en construisant</h3>
+          <p>Versionnement, documentation et amélioration progressive pour rendre chaque dépôt compréhensible.</p>
+          <ul class="tag-list" aria-label="Méthodes et outils">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Documentation</li>
+            <li>Tests</li>
+          </ul>
+        </article>
       </div>
+    </section>
+
+    <section class="section projects-section" id="projets" aria-labelledby="projects-title">
+      <div class="section-heading light">
+        <p class="section-number">03 — Projets</p>
+        <h2 id="projects-title">Trois dépôts, trois angles de travail.</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project">
+          <div class="project-order">01</div>
+          <div class="project-copy">
+            <p class="project-kind">Cybersécurité défensive · Python</p>
+            <h3>Nzox Security Audit</h3>
+            <p>Un outil d’audit Windows qui collecte des indicateurs locaux et produit un rapport HTML pour faciliter la lecture des résultats.</p>
+          </div>
+          <ul class="project-tags" aria-label="Technologies">
+            <li>Python</li>
+            <li>psutil</li>
+            <li>Windows</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Nzox973/nzox-security-audit" target="_blank" rel="noreferrer" aria-label="Ouvrir Nzox Security Audit sur GitHub">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <div class="project-order">02</div>
+          <div class="project-copy">
+            <p class="project-kind">Backend · API REST</p>
+            <h3>Nzox API</h3>
+            <p>Une API FastAPI structurée autour de l’authentification, de la validation des données et d’opérations CRUD.</p>
+          </div>
+          <ul class="project-tags" aria-label="Technologies">
+            <li>FastAPI</li>
+            <li>SQLAlchemy</li>
+            <li>JWT</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Nzox973/nzox-api" target="_blank" rel="noreferrer" aria-label="Ouvrir Nzox API sur GitHub">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="project">
+          <div class="project-order">03</div>
+          <div class="project-copy">
+            <p class="project-kind">Automatisation · Communauté</p>
+            <h3>NzoxYt Discord Bot</h3>
+            <p>Un bot Discord organisé en modules pour automatiser plusieurs fonctions communautaires et expérimenter des intégrations d’API.</p>
+          </div>
+          <ul class="project-tags" aria-label="Technologies">
+            <li>Python</li>
+            <li>discord.py</li>
+            <li>API</li>
+          </ul>
+          <a class="project-link" href="https://github.com/Nzox973/nzox-discord-bot" target="_blank" rel="noreferrer" aria-label="Ouvrir NzoxYt Discord Bot sur GitHub">GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="parcours" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <p class="section-number">04 — Parcours</p>
+        <h2 id="journey-title">Une chronologie courte et vérifiable.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <time datetime="2026-07">Juillet 2026</time>
+          <div>
+            <h3>Baccalauréat général obtenu</h3>
+            <p>Spécialités Mathématiques et Numérique et sciences informatiques.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-09">Septembre 2026</time>
+          <div>
+            <h3>Rentrée prévue en Bachelor</h3>
+            <p>Bachelor Management & Numérique au Pôle Supérieur de Guyane.</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026">2026–2029</time>
+          <div>
+            <h3>Cap de progression</h3>
+            <p>Développer des projets plus solides, acquérir de l’expérience et préciser une spécialisation en développement ou cybersécurité.</p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="timeline-disclaimer">Les étapes futures sont présentées comme des objectifs, pas comme des diplômes ou expériences déjà acquis.</p>
+    </section>
+
+    <section class="section links-section" id="liens" aria-labelledby="links-title">
+      <div class="section-heading light">
+        <p class="section-number">05 — Liens</p>
+        <h2 id="links-title">Choisir le bon point d’entrée.</h2>
+      </div>
+
+      <div class="link-groups">
+        <section class="link-group" aria-labelledby="professional-links">
+          <h3 id="professional-links">Parcours professionnel</h3>
+          <a href="https://www.linkedin.com/in/enzo-atticot/" target="_blank" rel="noreferrer">
+            <span><strong>LinkedIn</strong><small>Formation, expériences et compétences</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/Nzox973" target="_blank" rel="noreferrer">
+            <span><strong>GitHub</strong><small>Code source et documentation</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://learn.microsoft.com/en-us/users/enzoatticot-7921/" target="_blank" rel="noreferrer">
+            <span><strong>Microsoft Learn</strong><small>Badges et parcours d’apprentissage</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </section>
+
+        <section class="link-group" aria-labelledby="creator-links">
+          <h3 id="creator-links">Création de contenu — NzoxYt</h3>
+          <a href="https://www.youtube.com/@NzoxYt" target="_blank" rel="noreferrer">
+            <span><strong>YouTube</strong><small>Vidéos et publications</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.twitch.tv/nzoxyt" target="_blank" rel="noreferrer">
+            <span><strong>Twitch</strong><small>Diffusions en direct</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.instagram.com/nzoxyt/" target="_blank" rel="noreferrer">
+            <span><strong>Instagram</strong><small>Actualités du projet créatif</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.tiktok.com/@nzox_yt" target="_blank" rel="noreferrer">
+            <span><strong>TikTok</strong><small>Formats courts</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://x.com/nzoxyt" target="_blank" rel="noreferrer">
+            <span><strong>X</strong><small>Compte NzoxYt</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://discord.com/invite/5kQZWUGTyt" target="_blank" rel="noreferrer">
+            <span><strong>Discord</strong><small>Serveur communautaire</small></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </section>
+      </div>
+
+      <aside class="archive-note">
+        <div>
+          <p class="card-kicker">Archive publique</p>
+          <h3>Nzox Store</h3>
+        </div>
+        <p>Le catalogue reste consultable, mais les achats sont désactivés. Ce lien n’est pas présenté comme une boutique active.</p>
+        <a href="https://payhip.com/NzoxStore" target="_blank" rel="noreferrer">Consulter l’archive <span aria-hidden="true">↗</span></a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Enzo ATTICOT</strong>
+      <p>Développement · cybersécurité défensive · Guyane</p>
     </div>
+    <p class="privacy-note">
+      Ce site ne publie ni adresse personnelle, ni numéro officiel, ni document d’identité.
+      Contact professionnel via <a href="https://www.linkedin.com/in/enzo-atticot/" target="_blank" rel="noreferrer">LinkedIn</a>.
+    </p>
+    <a class="back-top" href="#accueil">Haut de page ↑</a>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
