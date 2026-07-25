@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio — Enzo ATTICOT",
+  "short_name": "Enzo ATTICOT",
+  "description": "Projets Python, API backend et cybersécurité défensive.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081312",
+  "theme_color": "#081312",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="4" fill="#081312"/>
+  <rect x="7" y="7" width="50" height="50" fill="none" stroke="#52d4bd" stroke-width="2"/>
+  <text x="32" y="39" fill="#edf1e8" font-family="monospace" font-size="21" font-weight="700" text-anchor="middle">EA</text>
+</svg>

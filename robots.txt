@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nzox973.github.io/sitemap.xml
