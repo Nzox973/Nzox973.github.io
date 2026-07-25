@@ -1,5 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="4" fill="#081312"/>
-  <rect x="7" y="7" width="50" height="50" fill="none" stroke="#52d4bd" stroke-width="2"/>
-  <text x="32" y="39" fill="#edf1e8" font-family="monospace" font-size="21" font-weight="700" text-anchor="middle">EA</text>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00e5ff"/>
+      <stop offset=".55" stop-color="#8e35ff"/>
+      <stop offset="1" stop-color="#f42cd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#03020f"/>
+  <circle cx="32" cy="32" r="24" fill="#08051d" stroke="url(#space)" stroke-width="2"/>
+  <path d="M15 36c9-17 25-22 35-9" fill="none" stroke="url(#space)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="48" cy="27" r="3" fill="#f42cd6"/>
+  <text x="32" y="40" fill="#f7fbff" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="800" text-anchor="middle">N</text>
 </svg>

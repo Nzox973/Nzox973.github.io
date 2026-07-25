@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#081312">
+  <meta name="theme-color" content="#03020f">
   <meta name="robots" content="noindex">
   <title>Page introuvable — Enzo ATTICOT</title>
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
@@ -15,18 +15,37 @@
       min-height: 100vh;
       margin: 0;
       place-items: center;
-      background: #081312;
-      color: #edf1e8;
-      font-family: "Aptos", "Gill Sans", "Trebuchet MS", sans-serif;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(3, 2, 15, .96), rgba(3, 2, 15, .62)),
+        url("/assets/img/hero-nebula.png") center / cover;
+      color: #f7fbff;
+      font-family: "Segoe UI", Arial, sans-serif;
     }
     main {
+      position: relative;
       width: min(720px, calc(100% - 40px));
       padding: 48px;
-      border: 1px solid rgba(82, 212, 189, .35);
-      box-shadow: 14px 14px 0 rgba(82, 212, 189, .08);
+      overflow: hidden;
+      border: 1px solid rgba(0, 229, 255, .34);
+      border-radius: 20px;
+      background: rgba(3, 2, 15, .74);
+      box-shadow: 0 30px 90px rgba(3, 2, 15, .6), inset 0 1px rgba(255,255,255,.05);
+      backdrop-filter: blur(16px);
+    }
+    main::after {
+      position: absolute;
+      right: -110px;
+      bottom: -120px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid rgba(244, 44, 214, .34);
+      border-radius: 50%;
+      box-shadow: inset 0 0 70px rgba(106, 36, 200, .16);
+      content: "";
     }
     p:first-child {
-      color: #52d4bd;
+      color: #00e5ff;
       font-family: "Cascadia Code", "Courier New", monospace;
       font-size: 13px;
       font-weight: 700;
@@ -35,25 +54,29 @@
     }
     h1 {
       margin: 18px 0;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       font-size: clamp(48px, 10vw, 84px);
-      font-weight: 400;
+      font-weight: 800;
       letter-spacing: -.05em;
       line-height: .95;
     }
-    p { color: #c5cec2; }
+    p { max-width: 500px; color: #c8cbe7; }
     a {
+      position: relative;
+      z-index: 1;
       display: inline-block;
       margin-top: 20px;
       padding: 12px 18px;
-      background: #52d4bd;
-      color: #081312;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00e5ff, #008fe8);
+      color: #03020f;
+      box-shadow: 0 0 32px rgba(0, 229, 255, .25);
       font-family: "Cascadia Code", "Courier New", monospace;
       font-size: 13px;
       font-weight: 700;
       text-decoration: none;
     }
-    a:focus-visible { outline: 3px solid #f2a65a; outline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #f42cd6; outline-offset: 4px; }
   </style>
 </head>
 <body>

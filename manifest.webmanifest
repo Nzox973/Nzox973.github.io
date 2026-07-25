@@ -4,8 +4,8 @@
   "description": "Projets Python, API backend et cybersécurité défensive.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#081312",
-  "theme_color": "#081312",
+  "background_color": "#03020f",
+  "theme_color": "#03020f",
   "icons": [
     {
       "src": "/assets/img/favicon.svg",
