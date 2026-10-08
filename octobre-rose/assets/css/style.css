@@ -2,7 +2,7 @@
   --paper: #f9f5f0;
   --cream: #f0eae1;
   --ink: #34352d;
-  --muted: #73736b;
+  --muted: #61635b;
   --pink: #ab365b;
   --pink-dark: #8c2948;
   --blush: #f1d9dd;
@@ -733,7 +733,7 @@ html:not(.js) .age-panel[hidden] {
 }
 .resource-category {
   font-size: 8px;
-  color: #697662;
+  color: #596650;
   letter-spacing: 1.25px;
 }
 .resource-card h3 {
@@ -823,7 +823,7 @@ html:not(.js) .age-panel[hidden] {
   position: relative;
 }
 .closing .mini-label {
-  color: #f3d4df;
+  color: #fff2f6;
   font-size: 9px;
   letter-spacing: 2px;
 }
