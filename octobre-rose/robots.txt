@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /octobre-rose/
+
+Sitemap: https://nzox973.github.io/octobre-rose/sitemap.xml
