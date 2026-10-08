@@ -113,6 +113,29 @@ if (typeof aboutDialog.showModal === "function") {
   aboutDialog.addEventListener("close", () =>
     document.body.classList.remove("dialog-open"),
   );
+  aboutDialog.addEventListener("keydown", (event) => {
+    if (event.key !== "Tab") return;
+
+    const controls = [
+      ...aboutDialog.querySelectorAll("button, a[href], [tabindex]"),
+    ].filter(
+      (control) =>
+        !control.disabled &&
+        control.tabIndex >= 0 &&
+        control.getClientRects().length > 0,
+    );
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (!first || !last) return;
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
   aboutDialog.addEventListener("click", (event) => {
     if (event.target !== aboutDialog) return;
     const rect = aboutDialog.getBoundingClientRect();
